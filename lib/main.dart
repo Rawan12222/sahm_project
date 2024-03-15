@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:sahm_project/CreditCards.dart';
 import 'package:sahm_project/address.dart';
+import 'package:sahm_project/checkout.dart';
 import 'package:sahm_project/forgot.dart';
 import 'package:sahm_project/login.dart';
 import 'package:sahm_project/myCart.dart';
+import 'package:sahm_project/myCrt2.dart';
 import 'package:sahm_project/myProfile.dart';
 import 'package:sahm_project/signUp.dart';
 import 'package:sahm_project/success_screen.dart';
@@ -25,7 +28,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: 
-      myCart()
+      myCart2()
+      //checkoutPage()
+      //CreditCardsPage()
+      //myCart()
       //forgtoPage()
       //verificationPage()
       //signUpPage()

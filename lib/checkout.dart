@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sahm_project/success_screen.dart';
 
@@ -110,9 +111,8 @@ class _checkoutPageState extends State<checkoutPage> {
                   borderRadius: BorderRadius.circular(25)
                 ),
                 child: TextButton(
-                onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(
-                  builder:(context)=> successScreen()));
+                onPressed: () => {
+                  Get.to( const successScreen())
                 }, 
                 child: Text("SUBMIT ORDER", style: GoogleFonts.tajawal(textStyle: TextStyle(fontSize: 20,fontWeight: FontWeight.w700, color: Color.fromRGBO(255, 255, 255, 1))),)
                 )
@@ -127,11 +127,6 @@ class _checkoutPageState extends State<checkoutPage> {
 
       ),);
       
-      
-
-
-
-    
   }
 
 

@@ -11,6 +11,8 @@ import 'package:sahm_project/signUp.dart';
 import 'package:sahm_project/success_screen.dart';
 import 'package:sahm_project/verification.dart';
 
+import 'bottom.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -28,7 +30,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: 
-      myCart2()
+      checkoutPage()
+      //BottomNabigation()
+      //myCart2()
       //checkoutPage()
       //CreditCardsPage()
       //myCart()

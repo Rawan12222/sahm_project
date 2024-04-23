@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:sahm_project/CreditCards.dart';
 import 'package:sahm_project/address.dart';
 import 'package:sahm_project/checkout.dart';
@@ -23,15 +24,15 @@ class MyApp extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         
         primarySwatch: Colors.blue,
       ),
       home: 
-      checkoutPage()
-      //BottomNabigation()
+    //  checkoutPage()
+      BottomNabigation()
       //myCart2()
       //checkoutPage()
       //CreditCardsPage()

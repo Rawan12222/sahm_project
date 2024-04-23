@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+import 'package:sahm_project/Controller.dart';
 import 'package:sahm_project/myCrt2.dart';
 import 'package:sahm_project/myProfile.dart';
 
@@ -25,14 +26,14 @@ class BottomNabigation extends StatefulWidget {
 
 class _BottomNabigation extends State<BottomNabigation>{
   
-  final controller = Get.put(navigatorController());
+  final controller = Get.put(NavigationBarCont());
   @override
   Widget build(BuildContext context) {
     final currentWidth = MediaQuery.of(context).size.width-36.4285;
     final currenheight = MediaQuery.of(context).size.height+128.571429;
     // TODO: implement build
     //throw UnimplementedError();
-    return GetBuilder<navigatorController>(
+    return GetBuilder<NavigationBarCont>(
       builder: (context){
         return Scaffold(
           body: IndexedStack(
@@ -46,8 +47,10 @@ class _BottomNabigation extends State<BottomNabigation>{
             ],
           ),
 
-          bottomNavigationBar: Container(
+          bottomNavigationBar: 
+    Container(
             child: GNav(
+              onTabChange: controller.changeTabIndex,
               //onTabChange:,
               //onTabChange: controller.tabIndex,
               

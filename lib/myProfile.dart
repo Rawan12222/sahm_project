@@ -339,47 +339,7 @@ class _profileState extends State<profile> {
         ],
       ),
       ),
-
-      bottomNavigationBar: BottomNavigationBar(
-        
-
-        type: BottomNavigationBarType.fixed,
-        backgroundColor: Color.fromRGBO(255, 255, 255, 1) ,
-        //elevation: 0,
-        unselectedItemColor: Color.fromRGBO(155, 155, 155, 1),
-        selectedItemColor: Color.fromRGBO(16, 148, 84, 1),
-        items: const [
-          //type: BottomNavigationBarType.fix,
-          
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-            ),
-
-            BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_cart_outlined),
-            label: 'Shop'
-            ),
-
-            BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_bag_outlined),
-            label: 'Cart'
-            ),
-
-            BottomNavigationBarItem(
-            icon: Icon(Icons.favorite_outline),
-            label: 'Favorite',
-            ),
-
-            BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Profile'
-            ),
-
-        ]
-        
-        ),
-
+    
     );
     
     
